@@ -16,6 +16,7 @@ function constructUser(cognitoUser, session) {
       RefreshToken: session.getRefreshToken().getToken(),
       RefreshTokenObj: session.getRefreshToken()
     },
+    expiration: session.getAccessToken().getExpiration(),
     attributes: {},
   };
 }
