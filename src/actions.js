@@ -165,7 +165,8 @@ export default function actionsFactory(config) {
       });
 
       return new Promise((resolve, reject) => {
-        cognitoUser.confirmRegistration(payload.code, true, (err) => {
+	//TODO: move second param to config?
+        cognitoUser.confirmRegistration(payload.code, false, (err) => {
           if (!err) {
             resolve();
             return;
