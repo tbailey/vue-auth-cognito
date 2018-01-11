@@ -2,7 +2,7 @@
   "name": "vue-auth-cognito",
   "version": "0.1.5",
   "description": "A Vue.js Vuex module for authentication using Amazon AWS Cognito",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "tap -Rspec --coverage --coverage-report=html test/unit/index.js",
     "test:watch": "tape-watch test/unit/index.js -p tap-spec",
